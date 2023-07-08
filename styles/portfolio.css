@@ -1,8 +1,4 @@
 
-*{
-    margin: 0px;
-}
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -15,22 +11,21 @@ body{
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px 200px;
 }
 
 nav h3{
     color: #181818;
     font-size: 45px;
-    /* font-family:'Open Sans', sans-serif; */
     font-weight: 800px;
-    word-wrap: break-word;
 }
 
 nav ul{
     display: flex;
     align-items: center;
-    margin: 50px;
+    /* margin-top: 50px; */
 }
 
 nav ul li{
@@ -55,6 +50,21 @@ nav a{
     font-weight: 700;
     color: white;
     padding: 19px 35px;
+}
+
+/* header related styles */
+.header{
+    background: #FFF8F3;
+}
+
+.banner{
+    padding: 30px 30px 30px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.banner img{
+    width: 500px;
 }
 
 
