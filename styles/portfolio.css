@@ -70,9 +70,9 @@ nav a {
 /* header related styles */
 .header {
     background-color: #FFF8F3;
-    background-image: url("/images/header_bg.png");
+    background-image: url("/images/header_bg.png"), url('/images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
 }
 
 .banner {
@@ -233,10 +233,9 @@ main section {
 footer {
     display: flex;
     background: #FFF8F3;
-    justify-content:space-between;
     align-items:flex-start;
     padding: 130px 200px;
-    margin: 100px;
+    margin-top: 100px;
     gap: 115px;
 }
 
@@ -244,18 +243,32 @@ footer {
 
 .section-description {
     color:#474747;
-    font-size: 16px;
     font-weight: 400;
-    width: 562px;
-    gap: 115px;
     text-align: left;
 }
 
 .footer-column{
-    float: inline-start;
+    /* float: inline-start; */
+    width: 50%;
+    text-align: left;
+    /* position: right; */
 }
 
 .social-links{
     display: flex;
     gap: 20px;
+}
+
+.contact input, textarea{
+    display: block;
+    margin-bottom: 24px;
+    padding: 18px 35px;
+    color: #757575;
+    border: 0;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.contact input[type='text'], .contact input[type="email"], textarea{
+    width: 100%;
 }
